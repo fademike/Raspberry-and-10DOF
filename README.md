@@ -2,7 +2,7 @@
 Raspberry Pi3 + 10DOF (MPU9255+BMP280)
 
 
-The program returns the data in JASON format!
+The program returns the data in JSON format!
 Example:
 {"status":"success","roll":"116.76","pitch":"-128.29","yaw":"-107.00","press":"98574","MPU_temp":"7824","BMP_temp":"4338"}
 
