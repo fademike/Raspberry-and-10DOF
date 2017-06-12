@@ -1,0 +1,13 @@
+
+CC = g++
+CSTD = c++11
+DEBUG = -g
+MYSQLFLAGS = -I /usr/include/mysql/ `mysql_config --cflags --libs`
+CFLAGS = -Wall --std=$(CSTD) $(DEBUG)
+LIBS = -lwiringPi -I..
+
+printIMU.out: printIMU.cpp
+	$(CC) $(MYSQLFLAGS) $(CFLAGS) -o $@ $< $(LIBS)
+
+clean:
+	rm *.out -f
